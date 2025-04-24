@@ -71,3 +71,37 @@ nav ul {
     justify-content: space-between;
     align-items: center;
 }
+
+/* Web-icons styles */
+.web-icons {
+    display: grid;
+    margin: 70px auto;
+    padding: 36px 62px;
+    gap: 20px;
+    grid-template-columns: repeat(7, 1fr);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+@media screen and (max-width: 576px) {
+    .nav, .nav-items, .banner {
+        flex-direction: column;
+    }
+    .banner {
+        gap: 20px;
+    }
+    .web-icons {
+        box-shadow: none;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+    }
+    header {
+        margin: auto;
+    }
+}
+@media screen and (min-width: 577px) and (max-width: 992px) {
+    .web-icons {
+        box-shadow: none;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+    }
+}
