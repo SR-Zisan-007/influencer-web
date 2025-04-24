@@ -1,0 +1,51 @@
+/* Shared styles */
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.text-primary {
+    color: rgba(58, 58, 58, 1);
+}
+
+.btn-primary {
+    background-color: rgba(224, 44, 109, 1);
+    color: white;
+    padding: 10px 24px;
+    border-radius: 25px;
+    border: none;
+}
+
+/* Nav styles */
+ul > li > a{
+    text-decoration: none;
+    color: rgba(58, 58, 58, 1);
+    font-weight: 700;
+}
+nav ul {
+    list-style: none;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto 120px;
+} 
+
+.nav-items {
+    display: flex;
+    gap:  34px;
+}
+
+.nav-title {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+/* Banner styles */
+.banner-title {
+    font-weight: 700;
+    font-size: 3.25rem;
+}
