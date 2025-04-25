@@ -1,4 +1,5 @@
 /* Shared styles */
+
 .poppins-regular {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -19,7 +20,7 @@
 }
 
 main {
-    margin: auto 120px;
+    margin: auto 200px;
 }
 
 header {
@@ -80,21 +81,106 @@ nav ul {
     gap: 20px;
     grid-template-columns: repeat(7, 1fr);
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    max-width: 1110px;
 }
 
+/* Collection Styles */
+
+.collection-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.collection-title {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+.card-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
+.card-photo > img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.card-price {
+    font-size: 1.5rem;
+}
+
+.collection-card {
+    box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.15);
+    padding: 17px;
+}
+
+/* Feature Styles */
+
+.featured-products {
+    margin-top: 100px;
+    gap: 100px;
+}
+
+.feature-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.feature-subtitle {
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(108, 108, 108, 1);
+}
+
+#feature-btn {
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Footer syles */
+
+footer {
+    background-color: rgba(10, 8, 38, 1);
+    margin: 0;
+    text-align: center;
+    padding: 50px;
+    margin-top: 50px;
+}
+
+.footer-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-details {
+    font-size: .9rem;
+    font-weight: bold;
+    color: white;
+}
+
+/* Media Query */
+
 @media screen and (max-width: 576px) {
-    .nav, .nav-items, .banner {
+    .nav, .nav-items, .banner, .featured-products {
         flex-direction: column;
     }
-    .banner {
+    .banner, .featured-products {
         gap: 20px;
+        text-align: center;
     }
-    .web-icons {
+    .web-icons, .collection-cards {
         box-shadow: none;
         grid-template-columns: repeat(1, 1fr);
         text-align: center;
     }
-    header {
+    header, main {
         margin: auto;
     }
 }
@@ -103,5 +189,8 @@ nav ul {
         box-shadow: none;
         grid-template-columns: repeat(4, 1fr);
         text-align: center;
+    }
+    header, main {
+        margin: 20px 50px;
     }
 }
